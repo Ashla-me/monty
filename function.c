@@ -55,21 +55,21 @@ instruct_func get_op_func(char *str)
 	int u;
 
 	instruction_t instruct[] = {
-		{"push", push},
-		{"pall", pall},
-		{"pint", pint},
-		{"pop", pop},
-		{"swap", swap},
+		{"push", _push_},
+		{"pall", _pall_},
+		{"pint", _pint_},
+		{"pop", _pop_},
+		{"swap", _swap_},
 		{"add", _addn},
-		{"nop", nop},
+		{"nop", _nop_},
 		{"sub", _subn},
 		{"mul", _muln},
 		{"div", _divn},
 		{"mod", _modn},
 		{"pchar", pchar},
 		{"pstr", pstr},
-		{"rotl", rotl},
-		{"rotr", rotr},
+		{"rotl", _rotl_},
+		{"rotr", _rotr_},
 		{NULL, NULL},
 	};
 

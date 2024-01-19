@@ -16,7 +16,7 @@ void pstr(stack_t **stack, unsigned int line_number)
 	while (tmp)
 	{
 		y = tmp->n;
-		if (y == 0 || _isalpha(y) == 0)
+		if (y == 0 || _isalpha_(y) == 0)
 			break;
 		putchar(y);
 		tmp = tmp->next;

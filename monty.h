@@ -60,6 +60,7 @@ void _read_file(char *filename, stack_t **stack);
 char *parse_line(char *line, stack_t **stack, unsigned int line_number);
 typedef void (*instruct_func)(stack_t **stack, unsigned int line_number);
 instruct_func get_op_func(char *str);
+ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 
 /*Fuxntions Monty*/
 void _pall_(stack_t **stack, unsigned int line_number);
